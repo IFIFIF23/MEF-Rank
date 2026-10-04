@@ -2,9 +2,7 @@
 
 **MEF-Rank: Model-Aware Action Memory for Financial Ranking** 论文配套代码。
 
-作者：Yifan Yuan、Yuanjian Zhang、Xiang Xu、Chuanchang Liu。单位：北京邮电大学计算机学院。
-
-[论文原文](main.pdf) · [English](README.md) · [完整运行与配置指南](code/README.md) · [数据说明](docs/DATA.md) · [实现说明](code/IMPLEMENTATION.md)
+[English](README.md) · [完整运行与配置指南](code/README.md) · [数据说明](docs/DATA.md) · [实现说明](code/IMPLEMENTATION.md)
 
 ## 项目概览
 
@@ -30,8 +28,12 @@ bash code/run.sh --dataset gem --model STR --key-file /secure/keys/gem.key --dev
 
 本地加密数据、密钥、运行结果、环境和交付压缩包不进入 Git。公开代码需要配合获授权的数据使用；密钥单独提供。[数据说明](docs/DATA.md)解释了各视图和保密边界。
 
+## 联系方式
+
+代码使用、实现问题及数据获取咨询，请联系：[yifany@bupt.edu.cn](mailto:yifany@bupt.edu.cn)。
+
 ## 实现状态
 
 新增完整增强链尚未进行端到端训练验证；本交付不包含已核验的论文数值复现结果。具体工程适配见[实现说明](code/IMPLEMENTATION.md)。原重排数据含后期源观察，相关结果属于诊断设置，不能表述为独立样本外表现；排序指标也不等同于扣费交易回测。
 
-论文方法、实验口径和报告结果见[提交稿](main.pdf)，引用元信息见 [CITATION.cff](CITATION.cff)。当前按已投稿论文标注，未填写尚未提供的录用会议、DOI 或正式出版年份。项目许可证尚待选定，上游组件遵循各自许可证，详见[第三方来源说明](THIRD_PARTY_NOTICES.md)。
+论文目前处于审稿阶段，公开论文链接将在可用后补充。完整作者名单与引用元信息见 [CITATION.cff](CITATION.cff)，未填写尚未提供的录用会议、DOI 或正式出版年份。项目许可证尚待选定，上游组件遵循各自许可证，详见[第三方来源说明](THIRD_PARTY_NOTICES.md)。

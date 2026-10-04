@@ -1,4 +1,5 @@
 # Private data and local delivery artifacts
+/main.pdf
 /data_encrypted/
 /DATASET_INVENTORY.json
 /代码交付包.zip

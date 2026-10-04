@@ -2,10 +2,7 @@
 
 **MEF-Rank: Model-Aware Action Memory for Financial Ranking**
 
-Yifan Yuan · Yuanjian Zhang · Xiang Xu · Chuanchang Liu  
-School of Computer Science, Beijing University of Posts and Telecommunications
-
-[Paper](main.pdf) · [中文说明](README.zh-CN.md) · [Training guide](code/README.md) · [Data access](docs/DATA.md) · [Implementation notes](code/IMPLEMENTATION.md)
+[中文说明](README.zh-CN.md) · [Training guide](code/README.md) · [Data access](docs/DATA.md) · [Implementation notes](code/IMPLEMENTATION.md)
 
 ## Overview
 
@@ -54,7 +51,6 @@ Use `--mode both` for paired comparisons. Each backbone also has `off.py` and `o
 .
 ├── README.md                  Project overview and quick start
 ├── README.zh-CN.md             Chinese overview
-├── main.pdf                   Submitted manuscript
 ├── CITATION.cff               Machine-readable citation
 ├── CONTRIBUTING.md            Guidance for model and pipeline changes
 ├── THIRD_PARTY_NOTICES.md      Upstream sources and licensing status
@@ -86,9 +82,13 @@ The reordered training data contain some observations sourced from later periods
 
 ## Paper and citation
 
-This repository accompanies **MEF-Rank: Model-Aware Action Memory for Financial Ranking** by Yifan Yuan, Yuanjian Zhang, Xiang Xu, and Chuanchang Liu. Read the [submitted manuscript](main.pdf) for the method, experimental protocol, and reported results.
+This repository accompanies **MEF-Rank: Model-Aware Action Memory for Financial Ranking**, currently under review. A public manuscript link will be added when available.
 
 Citation metadata are provided in [CITATION.cff](CITATION.cff). The manuscript is listed as submitted work; venue, DOI, and publication year will be added when available.
+
+## Contact
+
+For code usage, implementation questions, and dataset access inquiries, contact [yifany@bupt.edu.cn](mailto:yifany@bupt.edu.cn).
 
 ## License and acknowledgements
 

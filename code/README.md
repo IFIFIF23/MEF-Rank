@@ -1,6 +1,6 @@
 # MEF-Rank：训练与配置指南
 
-[项目首页](../README.md) · [中文概览](../README.zh-CN.md) · [数据说明](../docs/DATA.md) · [论文原文](../main.pdf)
+[项目首页](../README.md) · [中文概览](../README.zh-CN.md) · [数据说明](../docs/DATA.md)
 
 本包包含 STR、iTransformer、TimeMixer、ModernTCN、SOFTS、TimeXer、TimeBridge、TimeFilter、SRSNet、ChannelTokenFormer。每个主干有 `models/<模型>/off.py` 和 `on.py` 两个入口，模型核心及训练代码共享。
 
