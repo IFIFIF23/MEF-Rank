@@ -1,0 +1,151 @@
+schema_version: 1
+
+# 所有模型接收相同的金融张量 [stock_batch, 60, 125]，预测长度只作为官方模型
+# 中间结构的必要读出设为 1；最终监督目标始终是 H5 截面 rank。
+common:
+  seq_len: 60
+  pred_len: 1
+  enc_in: 125
+  c_out: 125
+  rank_bins: 20
+  use_norm: true
+  dropout: 0.1
+
+profiles:
+  m01_itransformer:
+    stock_batch_cap: 128
+    d_model: 64
+    d_ff: 128
+    n_heads: 4
+    e_layers: 2
+    factor: 3
+    activation: gelu
+    embed: timeF
+    freq: d
+    output_attention: false
+    class_strategy: projection
+
+  m02_timemixer:
+    stock_batch_cap: 128
+    task_name: long_term_forecast
+    label_len: 0
+    d_model: 32
+    d_ff: 64
+    e_layers: 2
+    moving_avg: 5
+    down_sampling_layers: 2
+    down_sampling_window: 2
+    down_sampling_method: avg
+    channel_independence: 0
+    decomp_method: moving_avg
+    top_k: 5
+    num_class: 2
+    embed: timeF
+    freq: d
+    use_future_temporal_feature: false
+
+  m03_moderntcn:
+    stock_batch_cap: 64
+    patch_size: 8
+    patch_stride: 4
+    stem_ratio: 1
+    downsample_ratio: 2
+    ffn_ratio: 1
+    num_blocks: [1, 1, 1, 1]
+    large_size: [13, 13, 13, 13]
+    small_size: [5, 5, 5, 5]
+    dims: [32, 32, 32, 32]
+    dw_dims: [32, 32, 32, 32]
+    head_dropout: 0.0
+    small_kernel_merged: false
+    use_multi_scale: false
+    revin: true
+    affine: true
+    subtract_last: false
+    individual: false
+    decomposition: false
+    kernel_size: 5
+    # Official constructor only accepts h/t even when temporal marks are omitted.
+    # No intraday value is supplied; te=None keeps the financial input strictly daily.
+    freq: h
+
+  m04_softs:
+    stock_batch_cap: 128
+    d_model: 64
+    d_core: 32
+    d_ff: 128
+    e_layers: 2
+    activation: gelu
+
+  m05_timexer:
+    stock_batch_cap: 64
+    task_name: long_term_forecast
+    features: MS
+    d_model: 64
+    d_ff: 128
+    n_heads: 4
+    e_layers: 1
+    factor: 3
+    activation: gelu
+    embed: timeF
+    freq: d
+    patch_len: 10
+    # 只使用同日及历史值。G1 ret_5（原索引1）是内生通道；其余124维显式作为外生历史。
+    endogenous_feature_index: 1
+    exogenous_policy: visible_history_only
+
+  m06_timebridge:
+    stock_batch_cap: 64
+    d_model: 32
+    d_ff: 64
+    n_heads: 4
+    period: 10
+    num_p: 3
+    stable_len: 3
+    ia_layers: 1
+    pd_layers: 1
+    ca_layers: 1
+    attn_dropout: 0.1
+    activation: gelu
+    revin: true
+
+  m07_timefilter:
+    stock_batch_cap: 8
+    task_name: long_term_forecast
+    d_model: 32
+    d_ff: 64
+    n_heads: 4
+    e_layers: 2
+    patch_len: 10
+    alpha: 0.1
+    top_p: 0.5
+    pos: true
+
+  m09_srsnet:
+    stock_batch_cap: 64
+    d_model: 64
+    patch_len: 10
+    stride: 5
+    hidden_size: 64
+    alpha: 2.0
+    pos: true
+    head_mode: mlp
+    affine: true
+    subtract_last: false
+
+  m10_channeltokenformer:
+    stock_batch_cap: 16
+    task_name: long_term_forecast
+    features: M
+    d_model: 32
+    d_ff: 64
+    n_heads: 4
+    e_layers: 2
+    factor: 3
+    activation: gelu
+    batch_size: 16
+    keep_prob: 1.0
+    num_global_tokens: 1
+    patch_lens: repeat:10
+    sampling_periods: repeat:1
+    setting: regular_daily

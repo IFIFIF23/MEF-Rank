@@ -1,0 +1,74 @@
+{
+  "m01_itransformer": {
+    "LICENSE": "29d2a4c09fa577780522219dc248466977f77cd420354c5e9a0e86550be2b849",
+    "layers/Embed.py": "2de7e5049a696d320a23a8bdb6e08e823cf7fa3f246a0a49555fcd729c5c8398",
+    "layers/SelfAttention_Family.py": "38ac67428d528b8e145e4944ca059b40629a8446c891142602d5aaadc38dfd9e",
+    "layers/Transformer_EncDec.py": "985c31f4ae187b08afaa9663dc960a40544b2ec33ab55389ceab3930edc1ce02",
+    "layers/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "model/iTransformer.py": "6f34777a5a12c253a293f79e7e1fd5b6f79ac100b443951e051e269e7e2542db",
+    "utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "utils/masking.py": "02f453e52cfaec65e34132923add80e7132f188706680fa86d7bd884976e09ef"
+  },
+  "m02_timemixer": {
+    "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "layers/Autoformer_EncDec.py": "48745b4bb647355e9845792a855df9c59fd7df7fcc664c765351fec390c4073e",
+    "layers/Embed.py": "ab492ea2f68459bbcf3cbffdd1beb75b24d0d70248d017a313a3b470316aaa2b",
+    "layers/StandardNorm.py": "cc1c0bc65b7b094bbe83f988fb05b86272a59638c030c3781aa52ce8880379df",
+    "layers/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "models/TimeMixer.py": "817d62f4aac54c8566e560f6d3785856e31c8ee51460279ee3d0a4823f11d4be"
+  },
+  "m03_moderntcn": {
+    "LICENSE": "62c172f180a9c70514e597a2e3bd22f12d3eb6eb2af1cbd79c83d4292a749115",
+    "ModernTCN-Long-term-forecasting/layers/RevIN.py": "1e08d0b3679f4ef79ac7f98a7f719f8d7f8a04595022ed34f702c7d70c0c4d90",
+    "ModernTCN-Long-term-forecasting/models/ModernTCN.py": "daf74722e40d928e5ed6bc871b528a5d5d2c9090f30cafb89110cc88dc60fa30",
+    "ModernTCN-Long-term-forecasting/models/ModernTCN_Layer.py": "b2291534c6a11ebd80882bed89f7cf8c76c721b8e0495294659f2c5b0fe88cea"
+  },
+  "m04_softs": {
+    "LICENSE": "02ad41e7363e960b1fa91658d0c21bdebf9ccb9881323606412dd39e79a3a178",
+    "layers/Embed.py": "46b79fb6970000d721297f9a368a3269b66b1a6fbb723d649bd63a2859d0fe3b",
+    "layers/Transformer_EncDec.py": "5b02b4aa9ae14d2e4ac3951a84f53011f5d15586f7a6e4a1e2a355e8e5309e7f",
+    "layers/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "models/SOFTS.py": "71cd0b1d72055ff71a313139bf1e9801351f7798c7b392f679a3befd7c2f16e1"
+  },
+  "m05_timexer": {
+    "layers/Embed.py": "17e7c3577324c41a0da427a199c955b782fde905aabb1f7cbc3c4e15ebd4ae35",
+    "layers/SelfAttention_Family.py": "6f6592aed0753e342fc04c01db70528c2eb191eeb067cd5fd4c8d348fddcb794",
+    "layers/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "models/TimeXer.py": "b334d7869544d0a5de7a35501d0342d7bd0be4ebda06ccc045855a42819728c0",
+    "utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "utils/masking.py": "5976ac3dc84915d0d294c1761573bc18434751f29ec421bcca5a9b280de46bae"
+  },
+  "m06_timebridge": {
+    "LICENSE": "475078cc1f6de41e1b39c66b61aad6e870ddec14ce7132e18241ed74b9b3b6ff",
+    "layers/Embed.py": "ca5b1221b4364577a75bb4794014dc6320849a70ad59fa8355c39fcc3eb6f7d2",
+    "layers/SelfAttention_Family.py": "90b333e78699d9caeade7aae1f880f54607292a1e470ae9ad28adc4ed8776b26",
+    "layers/Transformer_EncDec.py": "8c60fde6e9e5ff47f9524cb7d7ce2cbc80f6f4f706b9fc32bfd56d9120b49dc7",
+    "layers/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "model/TimeBridge.py": "85b2ba4e7f3199c3dafc9128296c248b02ec53335ac1f5d155e8a445b910a4b5",
+    "utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "utils/masking.py": "a63f8829eb75eb737cd91aa0303cd1692c651bf65a107bf5b51b369a0649d085"
+  },
+  "m07_timefilter": {
+    "layers/Embed.py": "17e7c3577324c41a0da427a199c955b782fde905aabb1f7cbc3c4e15ebd4ae35",
+    "layers/StandardNorm.py": "3f690dc5fc0e395d4f1ffe6396717548d18bd04f4518258308bbe5f392703f5f",
+    "layers/TimeFilter_layers.py": "f48eb9af75362ce6219ce4dd7b096238218836a400629ed7604383ff6ab26635",
+    "layers/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "models/TimeFilter.py": "25fbf20a1c5d5471695897156ea3a29d84307b9fa54669e1fe91358c6a2d429c"
+  },
+  "m09_srsnet": {
+    "LICENSE": "212e9147f810f6ca6d14f3f6b0182f141e69f1da7d2c429aaebf27e6c0ed25b6",
+    "ts_benchmark/baselines/srsnet/layers/RevIN.py": "0faa1c0dc53b8dc470572babc3540d8c98622370de773c29437702702332ae96",
+    "ts_benchmark/baselines/srsnet/layers/SRS.py": "5a178b2f1964de5f74eef769926aabc0c3f3bbb02f7d09fb2a5021779fa85a80",
+    "ts_benchmark/baselines/srsnet/layers/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ts_benchmark/baselines/srsnet/models/srsnet_model.py": "5736f4323b70e2ae4d79162fd2174a9d7b61aaa1a028502c777d6e4c25731275"
+  },
+  "m10_channeltokenformer": {
+    "layers/CTF_Embed.py": "388cda5430ea848bb62735a23a3932917d88adc807c8e52f8eb2df2bf6e6a2b1",
+    "layers/Embed.py": "463994998e276affbe9b7cd8331b5b4cf14c4426749161d9d20c31998c0bbb4f",
+    "layers/SelfAttention_Family.py": "11ed088ef4923f83aafab3493d3b445594e6886c60bcd232435f4b859ecef901",
+    "layers/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "models/ChannelTokenFormer.py": "a444765919b9cc4f5dea022ebd32aa3a082dd3b877b84da03faafae1c76f47c7",
+    "utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "utils/masking.py": "02f453e52cfaec65e34132923add80e7132f188706680fa86d7bd884976e09ef"
+  }
+}

@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the accompanying MEF-Rank manuscript."
+type: software
+title: "MEF-Rank: Model-Aware Action Memory for Financial Ranking"
+authors:
+  - family-names: Yuan
+    given-names: Yifan
+  - family-names: Zhang
+    given-names: Yuanjian
+  - family-names: Xu
+    given-names: Xiang
+  - family-names: Liu
+    given-names: Chuanchang
+repository-code: "https://github.com/IFIFIF23/MEF-Rank"
+abstract: "Research code for model-aware action memory in financial ranking, with paired Off/On evaluation across ten backbones and five markets."
+keywords:
+  - financial ranking
+  - model-aware retrieval
+  - action memory
+  - time-series forecasting
+preferred-citation:
+  type: unpublished
+  title: "MEF-Rank: Model-Aware Action Memory for Financial Ranking"
+  authors:
+    - family-names: Yuan
+      given-names: Yifan
+    - family-names: Zhang
+      given-names: Yuanjian
+    - family-names: Xu
+      given-names: Xiang
+    - family-names: Liu
+      given-names: Chuanchang
+  notes: "Submitted manuscript; see main.pdf in the repository."

@@ -1,0 +1,33 @@
+# Private data and local delivery artifacts
+/data_encrypted/
+/DATASET_INVENTORY.json
+/代码交付包.zip
+/.handoff_private/
+/.publication-review.md
+*.key
+*.pem
+.env
+.env.*
+!.env.example
+
+# Environments, downloaded upstream sources, and run outputs
+/code/.venv/
+/code/.venv*/
+/code/outputs/
+/code/third_party/sources/
+/.venv/
+/venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+/build/
+/dist/
+
+# Local editor and operating-system files
+.DS_Store
+.idea/
+.vscode/
+*.swp

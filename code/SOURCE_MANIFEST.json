@@ -1,0 +1,688 @@
+[
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/model.py",
+    "destination": "vendor/mef_rank/model.py",
+    "source_sha256": "5837fd676ae07ef185f0ee181166f3f5bdbeaaac99003664baa770d0b69030fe",
+    "delivery_sha256": "5837fd676ae07ef185f0ee181166f3f5bdbeaaac99003664baa770d0b69030fe",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/identity.py",
+    "destination": "vendor/mef_rank/identity.py",
+    "source_sha256": "58085df45b5256741deb4207538658a8624940627ff08a159bd0c99cc0eae513",
+    "delivery_sha256": "58085df45b5256741deb4207538658a8624940627ff08a159bd0c99cc0eae513",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/__init__.py",
+    "destination": "vendor/mef_rank/__init__.py",
+    "source_sha256": "f0a2bf5fad9d915a3ecf792503aa8a854531cf84d4b25c31df6cdd8cc09f0d0f",
+    "delivery_sha256": "f0a2bf5fad9d915a3ecf792503aa8a854531cf84d4b25c31df6cdd8cc09f0d0f",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/mbs/__init__.py",
+    "destination": "vendor/mef_rank/mbs/__init__.py",
+    "source_sha256": "a472ea7fea382d1ba2081c18097bf4134418c5811f459ef55ee4e3370c3ae483",
+    "delivery_sha256": "a472ea7fea382d1ba2081c18097bf4134418c5811f459ef55ee4e3370c3ae483",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/mbs/observable.py",
+    "destination": "vendor/mef_rank/mbs/observable.py",
+    "source_sha256": "91a8f23c1bbdfb696cf7f1e82fb071280459814aa69fbe13a3d728efa764e31d",
+    "delivery_sha256": "91a8f23c1bbdfb696cf7f1e82fb071280459814aa69fbe13a3d728efa764e31d",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/inverse/reliability_shift.py",
+    "destination": "vendor/mef_rank/inverse/reliability_shift.py",
+    "source_sha256": "7d36fc11d5898bc19cce2ba2b797049d690e2292cc5f9c03c1a71de1ebf27a09",
+    "delivery_sha256": "7d36fc11d5898bc19cce2ba2b797049d690e2292cc5f9c03c1a71de1ebf27a09",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/inverse/__init__.py",
+    "destination": "vendor/mef_rank/inverse/__init__.py",
+    "source_sha256": "f6092a662a4479269c334b6d62c7c6a7b5f81367e8954eba97ba0aea130822cf",
+    "delivery_sha256": "f6092a662a4479269c334b6d62c7c6a7b5f81367e8954eba97ba0aea130822cf",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/v37/contracts.py",
+    "destination": "vendor/mef_rank/v37/contracts.py",
+    "source_sha256": "79e94ef50b3209932370858661df0bd1eab3eb86fd81cc378f6a65503b5365e1",
+    "delivery_sha256": "79e94ef50b3209932370858661df0bd1eab3eb86fd81cc378f6a65503b5365e1",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/v37/metrics.py",
+    "destination": "vendor/mef_rank/v37/metrics.py",
+    "source_sha256": "598e0234410aa32ee76cb14e7dfbe2a6ad38a03810a282f03f7f00ee89001030",
+    "delivery_sha256": "598e0234410aa32ee76cb14e7dfbe2a6ad38a03810a282f03f7f00ee89001030",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/v37/writer.py",
+    "destination": "vendor/mef_rank/v37/writer.py",
+    "source_sha256": "9fd68bfaeac6cce744de12891241d8752b331fccd6d6d3d38e5c6d28ca925190",
+    "delivery_sha256": "9fd68bfaeac6cce744de12891241d8752b331fccd6d6d3d38e5c6d28ca925190",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/v37/lifecycle.py",
+    "destination": "vendor/mef_rank/v37/lifecycle.py",
+    "source_sha256": "323b8b369b08250f290c34f660a57541e295760c9d657c7a5ac9c146a49ac9f3",
+    "delivery_sha256": "323b8b369b08250f290c34f660a57541e295760c9d657c7a5ac9c146a49ac9f3",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/v37/memory.py",
+    "destination": "vendor/mef_rank/v37/memory.py",
+    "source_sha256": "f1a60af6cc014ed2b031491f408b8d8d48ae4b3def6936df07bcc28e658bff2b",
+    "delivery_sha256": "f1a60af6cc014ed2b031491f408b8d8d48ae4b3def6936df07bcc28e658bff2b",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/v37/cal1.py",
+    "destination": "vendor/mef_rank/v37/cal1.py",
+    "source_sha256": "954375a9b29a0bbb5d1656c56f596edb052786e8572a442626513793368bd33e",
+    "delivery_sha256": "954375a9b29a0bbb5d1656c56f596edb052786e8572a442626513793368bd33e",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/v37/identity.py",
+    "destination": "vendor/mef_rank/v37/identity.py",
+    "source_sha256": "97698100028a7ab394485a3531fd69d56bbd67bce6e8101771ef5f560670ab92",
+    "delivery_sha256": "97698100028a7ab394485a3531fd69d56bbd67bce6e8101771ef5f560670ab92",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/v37/__init__.py",
+    "destination": "vendor/mef_rank/v37/__init__.py",
+    "source_sha256": "b0af54cf52b470fa2d590c7be590d30978afc58ab4879536a23b8c61936dce6a",
+    "delivery_sha256": "b0af54cf52b470fa2d590c7be590d30978afc58ab4879536a23b8c61936dce6a",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/str_model/day_batch.py",
+    "destination": "vendor/mef_rank/str_model/day_batch.py",
+    "source_sha256": "4022d7d2ffe6268868f1db8e990d0f4c252415c973398daebaa76b51adfda9f4",
+    "delivery_sha256": "4022d7d2ffe6268868f1db8e990d0f4c252415c973398daebaa76b51adfda9f4",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/str_model/network.py",
+    "destination": "vendor/mef_rank/str_model/network.py",
+    "source_sha256": "88cdbe05c3d11b1f25912e60a88d3f0d4d9838ae8b815103bf9bfb9cb5ff34fe",
+    "delivery_sha256": "88cdbe05c3d11b1f25912e60a88d3f0d4d9838ae8b815103bf9bfb9cb5ff34fe",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/str_model/training.py",
+    "destination": "vendor/mef_rank/str_model/training.py",
+    "source_sha256": "52dc8e0ad5414260117931502898cdc479bcbae175646b070efe7671a17982aa",
+    "delivery_sha256": "52dc8e0ad5414260117931502898cdc479bcbae175646b070efe7671a17982aa",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/str_model/exact_fallback.py",
+    "destination": "vendor/mef_rank/str_model/exact_fallback.py",
+    "source_sha256": "7119990dfb663bd143a546ecf77f6129c3a6eb0f1bbf69927a6333816b91693d",
+    "delivery_sha256": "7119990dfb663bd143a546ecf77f6129c3a6eb0f1bbf69927a6333816b91693d",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/str_model/__init__.py",
+    "destination": "vendor/mef_rank/str_model/__init__.py",
+    "source_sha256": "52b5dcfcecf7d86b9976622aa0bbbbf6a4d02af46721a79750235d8da3fe5e21",
+    "delivery_sha256": "52b5dcfcecf7d86b9976622aa0bbbbf6a4d02af46721a79750235d8da3fe5e21",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/str_model/contracts.py",
+    "destination": "vendor/mef_rank/str_model/contracts.py",
+    "source_sha256": "1a44a671dbeb1e5ad27beae303a5147354fc0cfbcabd158f5e4161c0e2b9d5fa",
+    "delivery_sha256": "1a44a671dbeb1e5ad27beae303a5147354fc0cfbcabd158f5e4161c0e2b9d5fa",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/writer/pgd.py",
+    "destination": "vendor/mef_rank/writer/pgd.py",
+    "source_sha256": "1be004e88c24248596b2c06bd6cde2bc357acd204a18ace75eba673e97ca1bb7",
+    "delivery_sha256": "afb8168c8d20121274244b53c7ac86ba0ea030f27157c377a7bcda6bb4ccc0d4",
+    "adapted": true
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/writer/__init__.py",
+    "destination": "vendor/mef_rank/writer/__init__.py",
+    "source_sha256": "c15e7efa3efbde806a3f05737508ec2116dd15fd774e5de8068d0eb227b009ac",
+    "delivery_sha256": "c15e7efa3efbde806a3f05737508ec2116dd15fd774e5de8068d0eb227b009ac",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/v36/label_isolation.py",
+    "destination": "vendor/mef_rank/v36/label_isolation.py",
+    "source_sha256": "a09da5e47ce5bf8e7ea623b6bbe02f50db6657dc77b52a32014ffcbafcd43d54",
+    "delivery_sha256": "a09da5e47ce5bf8e7ea623b6bbe02f50db6657dc77b52a32014ffcbafcd43d54",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/v36/formal_writer.py",
+    "destination": "vendor/mef_rank/v36/formal_writer.py",
+    "source_sha256": "41ca05b009de7276d47a15ed10f0fe560a4a038d48353280376d47a37d2ed7ad",
+    "delivery_sha256": "41ca05b009de7276d47a15ed10f0fe560a4a038d48353280376d47a37d2ed7ad",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/v36/rebaseline.py",
+    "destination": "vendor/mef_rank/v36/rebaseline.py",
+    "source_sha256": "91a4c7230dbfee7f5aa882e03541c120abdcd60d4edd857313faef9aca6b83c2",
+    "delivery_sha256": "91a4c7230dbfee7f5aa882e03541c120abdcd60d4edd857313faef9aca6b83c2",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/v36/jacf_cal0.py",
+    "destination": "vendor/mef_rank/v36/jacf_cal0.py",
+    "source_sha256": "28dd36f6fdfd3d6c92e918b737992342b7389c3a1a35786fef1e42e6ff8a81f0",
+    "delivery_sha256": "28dd36f6fdfd3d6c92e918b737992342b7389c3a1a35786fef1e42e6ff8a81f0",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/v36/__init__.py",
+    "destination": "vendor/mef_rank/v36/__init__.py",
+    "source_sha256": "c521b445f629e57905dcab91f76278dfaf5e1dc092b437cd81b8319f2d3d98cd",
+    "delivery_sha256": "c521b445f629e57905dcab91f76278dfaf5e1dc092b437cd81b8319f2d3d98cd",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/v36/writer_runtime.py",
+    "destination": "vendor/mef_rank/v36/writer_runtime.py",
+    "source_sha256": "4d96f1076eed70c2e4916896bb319d19ac84e50e89bf53eb002713eb76337a7e",
+    "delivery_sha256": "4d96f1076eed70c2e4916896bb319d19ac84e50e89bf53eb002713eb76337a7e",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/signal_builder/__init__.py",
+    "destination": "vendor/mef_rank/signal_builder/__init__.py",
+    "source_sha256": "e01908b0d557111303f7802afcb58ac941ea99204a1d85ae4d62c0d2d6413d4c",
+    "delivery_sha256": "e01908b0d557111303f7802afcb58ac941ea99204a1d85ae4d62c0d2d6413d4c",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/signal_builder/g7_chen.py",
+    "destination": "vendor/mef_rank/signal_builder/g7_chen.py",
+    "source_sha256": "bed4755440e7bde8fb13765adc747f11baaf0ed0cb0a9dd36ddc17f61c6aa839",
+    "delivery_sha256": "bed4755440e7bde8fb13765adc747f11baaf0ed0cb0a9dd36ddc17f61c6aa839",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/signal_builder/g7_builder.py",
+    "destination": "vendor/mef_rank/signal_builder/g7_builder.py",
+    "source_sha256": "6b17536aea65166d3561cd2a0c94c9fb74cb237987507573be79907a80c0bcee",
+    "delivery_sha256": "6b17536aea65166d3561cd2a0c94c9fb74cb237987507573be79907a80c0bcee",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/signal_builder/full_builder.py",
+    "destination": "vendor/mef_rank/signal_builder/full_builder.py",
+    "source_sha256": "9ec6ca5d857565cd75566e981df3cb669847d1fe64739bee3aa6686ebd2cc619",
+    "delivery_sha256": "9ec6ca5d857565cd75566e981df3cb669847d1fe64739bee3aa6686ebd2cc619",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/fec/__init__.py",
+    "destination": "vendor/mef_rank/fec/__init__.py",
+    "source_sha256": "e0f917824d8bce77088ba270bb2ae00cb0744517ae9e085ce1e756695ae5d36e",
+    "delivery_sha256": "e0f917824d8bce77088ba270bb2ae00cb0744517ae9e085ce1e756695ae5d36e",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/fec/builder.py",
+    "destination": "vendor/mef_rank/fec/builder.py",
+    "source_sha256": "0b9df626df3ccc718a05eadab5beea0a50f9d20a52a47f7d1ffeebe128e75dc1",
+    "delivery_sha256": "0b9df626df3ccc718a05eadab5beea0a50f9d20a52a47f7d1ffeebe128e75dc1",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/shock/__init__.py",
+    "destination": "vendor/mef_rank/shock/__init__.py",
+    "source_sha256": "462c252093479fe1a23116ad3278c87fd078c58b983e68188fdca2cd85e52095",
+    "delivery_sha256": "462c252093479fe1a23116ad3278c87fd078c58b983e68188fdca2cd85e52095",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/shock/builder.py",
+    "destination": "vendor/mef_rank/shock/builder.py",
+    "source_sha256": "d9e2e2d57afbe786e0e846ae965e95f83190fedb5b27b4df5434cc4f4c3aa360",
+    "delivery_sha256": "d9e2e2d57afbe786e0e846ae965e95f83190fedb5b27b4df5434cc4f4c3aa360",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/v371/writer.py",
+    "destination": "vendor/mef_rank/v371/writer.py",
+    "source_sha256": "17ead5604977ec5b62a79673061fcf2c7b23bf37cc1746d4925f623e1216840e",
+    "delivery_sha256": "17ead5604977ec5b62a79673061fcf2c7b23bf37cc1746d4925f623e1216840e",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/v371/lifecycle.py",
+    "destination": "vendor/mef_rank/v371/lifecycle.py",
+    "source_sha256": "323b8b369b08250f290c34f660a57541e295760c9d657c7a5ac9c146a49ac9f3",
+    "delivery_sha256": "323b8b369b08250f290c34f660a57541e295760c9d657c7a5ac9c146a49ac9f3",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/v371/memory.py",
+    "destination": "vendor/mef_rank/v371/memory.py",
+    "source_sha256": "7334fddfbd8742ffc4ed0426e087e47a2998409183e82bcf324527b193515d98",
+    "delivery_sha256": "7334fddfbd8742ffc4ed0426e087e47a2998409183e82bcf324527b193515d98",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/v371/cal1.py",
+    "destination": "vendor/mef_rank/v371/cal1.py",
+    "source_sha256": "274f3466667b4cb8a573a26c3f56f4f32ee9686ab057a049cf96800af2d45e67",
+    "delivery_sha256": "274f3466667b4cb8a573a26c3f56f4f32ee9686ab057a049cf96800af2d45e67",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/v371/contracts.py",
+    "destination": "vendor/mef_rank/v371/contracts.py",
+    "source_sha256": "7357776df2f665d1ddf8d67460dad6f3e26647d047909d9b5a181f905b48cdb7",
+    "delivery_sha256": "7357776df2f665d1ddf8d67460dad6f3e26647d047909d9b5a181f905b48cdb7",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/v371/metrics.py",
+    "destination": "vendor/mef_rank/v371/metrics.py",
+    "source_sha256": "b445c7d9d167c39ac144861cecb38228c72b19bef95b0cfbcbdaefb86c306d7a",
+    "delivery_sha256": "b445c7d9d167c39ac144861cecb38228c72b19bef95b0cfbcbdaefb86c306d7a",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/v371/identity.py",
+    "destination": "vendor/mef_rank/v371/identity.py",
+    "source_sha256": "9c593833da377f125dcd6a36ee59b0ae9f9588948ed53e5a4fcac2ec27ba084b",
+    "delivery_sha256": "9c593833da377f125dcd6a36ee59b0ae9f9588948ed53e5a4fcac2ec27ba084b",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/v371/__init__.py",
+    "destination": "vendor/mef_rank/v371/__init__.py",
+    "source_sha256": "1908df4c550f11a0a3f0c9bf26746b921b82db46c8c5a718bc89d2ec9bf49df6",
+    "delivery_sha256": "1908df4c550f11a0a3f0c9bf26746b921b82db46c8c5a718bc89d2ec9bf49df6",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/experiments/mef_unified_v1/src/mef_unified/__init__.py",
+    "destination": "src/mef_unified/__init__.py",
+    "source_sha256": "37fe62d34b20163c73c03a368504f6fbb4a985fb7fedacebe2fbe6e1958914e1",
+    "delivery_sha256": "37fe62d34b20163c73c03a368504f6fbb4a985fb7fedacebe2fbe6e1958914e1",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/experiments/mef_unified_v1/src/mef_unified/adapters.py",
+    "destination": "src/mef_unified/adapters.py",
+    "source_sha256": "3350de0e095fc093c8bad6706c9259c3e18d2a2850d8ed445d002280d011204e",
+    "delivery_sha256": "51c1f4acaf8df69dd9d2bda3b751ed23a4b5ebdb5c813d6f8c0d1e400a55c7bd",
+    "adapted": true
+  },
+  {
+    "source": "试验区2/src/benchmark_suite/__init__.py",
+    "destination": "src/benchmark_suite/__init__.py",
+    "source_sha256": "3d76c29c69de111c9dba49b048d275c40f1e40f7630e6d3130e090842f1a49b3",
+    "delivery_sha256": "6e4de60237fdd40aa9bff607846d44146a10f2774d60b042e9d6522438e6a91a",
+    "adapted": true
+  },
+  {
+    "source": "试验区2/src/benchmark_suite/data.py",
+    "destination": "src/benchmark_suite/data.py",
+    "source_sha256": "685c457f2979e11200294b30c8e9cd0ce85ded269bf732731a89d52a4afc7b51",
+    "delivery_sha256": "1758a07f1b2ec2a5d8ab1f50bbea8e4ae12fe4bf07c11fee1ff95fa7f1c5c4b7",
+    "adapted": true
+  },
+  {
+    "source": "试验区2/src/benchmark_suite/contracts.py",
+    "destination": "src/benchmark_suite/contracts.py",
+    "source_sha256": "214a7594efc521f5525381644adecaaa7d13221c2f84f50c3aa656873a9fb945",
+    "delivery_sha256": "214a7594efc521f5525381644adecaaa7d13221c2f84f50c3aa656873a9fb945",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/src/benchmark_suite/official.py",
+    "destination": "src/benchmark_suite/official.py",
+    "source_sha256": "6cbf3f2a1d1f82f2bbe673671331b2018bce30c6f1b61e1a1528ca013d9319af",
+    "delivery_sha256": "40f8cc275ea445e2f3deb1b4fd1689a996d575fff777c72ee9fd1ab37161e002",
+    "adapted": true
+  },
+  {
+    "source": "试验区2/experiments/mef_unified_v1/src/mef_unified/training.py",
+    "destination": "src/mef_unified/training.py",
+    "source_sha256": "59aa58f86b7f2efd617a77db3cef004a673d515cc4f7d063914206c209407548",
+    "delivery_sha256": "9bb2346b0cdbb391396450543d13ad1f9444537cd80275a27a4f285aa1320384",
+    "adapted": true
+  },
+  {
+    "source": "src/evaluation/metrics.py",
+    "destination": "src/evaluation/metrics.py",
+    "source_sha256": "71a6fddebe58944ee200fe07e0eb221d9b9eb7d089c055a1d3f15d7430337eb6",
+    "delivery_sha256": "71a6fddebe58944ee200fe07e0eb221d9b9eb7d089c055a1d3f15d7430337eb6",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/config/model_profiles.yaml",
+    "destination": "config/model_profiles.yaml",
+    "source_sha256": "b46e636a41f0ee84b174ea8805ba92c814d4fc2bbb7909cb0aebbe28cda1d74e",
+    "delivery_sha256": "b46e636a41f0ee84b174ea8805ba92c814d4fc2bbb7909cb0aebbe28cda1d74e",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/experiments/mef_unified_v1/config/training_v001.json",
+    "destination": "config/training_v001.json",
+    "source_sha256": "27d4d3247657ddcd8628332dd73d749714315f4c83bef5b11544b8b88314b5de",
+    "delivery_sha256": "8d913100f134603136d376a0dd990ecec88c1efcdc4e1056389efa235f5547d6",
+    "adapted": true
+  },
+  {
+    "source": "试验区2/third_party/model_sources.lock.yaml",
+    "destination": "third_party/model_sources.lock.yaml",
+    "source_sha256": "fe0db286f99da99621e26cfc18783ed25444c7fea0a281656776dd816445744f",
+    "delivery_sha256": "fe0db286f99da99621e26cfc18783ed25444c7fea0a281656776dd816445744f",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/experiments/mef_unified_v1/scripts/qualify_adapters.py",
+    "destination": "scripts/qualify_adapters.py",
+    "source_sha256": "fe06c021f961ad1c61cda4754d4a3c6f0f47df26039726b8e33d5526b551a1d1",
+    "delivery_sha256": "fe06c021f961ad1c61cda4754d4a3c6f0f47df26039726b8e33d5526b551a1d1",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m01_itransformer/LICENSE",
+    "destination": "third_party/sources/m01_itransformer/LICENSE",
+    "source_sha256": "29d2a4c09fa577780522219dc248466977f77cd420354c5e9a0e86550be2b849",
+    "delivery_sha256": "29d2a4c09fa577780522219dc248466977f77cd420354c5e9a0e86550be2b849",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m01_itransformer/layers/Embed.py",
+    "destination": "third_party/sources/m01_itransformer/layers/Embed.py",
+    "source_sha256": "2de7e5049a696d320a23a8bdb6e08e823cf7fa3f246a0a49555fcd729c5c8398",
+    "delivery_sha256": "2de7e5049a696d320a23a8bdb6e08e823cf7fa3f246a0a49555fcd729c5c8398",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m01_itransformer/layers/SelfAttention_Family.py",
+    "destination": "third_party/sources/m01_itransformer/layers/SelfAttention_Family.py",
+    "source_sha256": "38ac67428d528b8e145e4944ca059b40629a8446c891142602d5aaadc38dfd9e",
+    "delivery_sha256": "38ac67428d528b8e145e4944ca059b40629a8446c891142602d5aaadc38dfd9e",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m01_itransformer/layers/Transformer_EncDec.py",
+    "destination": "third_party/sources/m01_itransformer/layers/Transformer_EncDec.py",
+    "source_sha256": "985c31f4ae187b08afaa9663dc960a40544b2ec33ab55389ceab3930edc1ce02",
+    "delivery_sha256": "985c31f4ae187b08afaa9663dc960a40544b2ec33ab55389ceab3930edc1ce02",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m01_itransformer/layers/__init__.py",
+    "destination": "third_party/sources/m01_itransformer/layers/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "delivery_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m01_itransformer/model/iTransformer.py",
+    "destination": "third_party/sources/m01_itransformer/model/iTransformer.py",
+    "source_sha256": "6f34777a5a12c253a293f79e7e1fd5b6f79ac100b443951e051e269e7e2542db",
+    "delivery_sha256": "6f34777a5a12c253a293f79e7e1fd5b6f79ac100b443951e051e269e7e2542db",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m01_itransformer/utils/__init__.py",
+    "destination": "third_party/sources/m01_itransformer/utils/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "delivery_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m01_itransformer/utils/masking.py",
+    "destination": "third_party/sources/m01_itransformer/utils/masking.py",
+    "source_sha256": "02f453e52cfaec65e34132923add80e7132f188706680fa86d7bd884976e09ef",
+    "delivery_sha256": "02f453e52cfaec65e34132923add80e7132f188706680fa86d7bd884976e09ef",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m02_timemixer/LICENSE",
+    "destination": "third_party/sources/m02_timemixer/LICENSE",
+    "source_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "delivery_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m02_timemixer/layers/Autoformer_EncDec.py",
+    "destination": "third_party/sources/m02_timemixer/layers/Autoformer_EncDec.py",
+    "source_sha256": "48745b4bb647355e9845792a855df9c59fd7df7fcc664c765351fec390c4073e",
+    "delivery_sha256": "48745b4bb647355e9845792a855df9c59fd7df7fcc664c765351fec390c4073e",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m02_timemixer/layers/Embed.py",
+    "destination": "third_party/sources/m02_timemixer/layers/Embed.py",
+    "source_sha256": "ab492ea2f68459bbcf3cbffdd1beb75b24d0d70248d017a313a3b470316aaa2b",
+    "delivery_sha256": "ab492ea2f68459bbcf3cbffdd1beb75b24d0d70248d017a313a3b470316aaa2b",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m02_timemixer/layers/StandardNorm.py",
+    "destination": "third_party/sources/m02_timemixer/layers/StandardNorm.py",
+    "source_sha256": "cc1c0bc65b7b094bbe83f988fb05b86272a59638c030c3781aa52ce8880379df",
+    "delivery_sha256": "cc1c0bc65b7b094bbe83f988fb05b86272a59638c030c3781aa52ce8880379df",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m02_timemixer/layers/__init__.py",
+    "destination": "third_party/sources/m02_timemixer/layers/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "delivery_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m02_timemixer/models/TimeMixer.py",
+    "destination": "third_party/sources/m02_timemixer/models/TimeMixer.py",
+    "source_sha256": "817d62f4aac54c8566e560f6d3785856e31c8ee51460279ee3d0a4823f11d4be",
+    "delivery_sha256": "817d62f4aac54c8566e560f6d3785856e31c8ee51460279ee3d0a4823f11d4be",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m03_moderntcn/LICENSE",
+    "destination": "third_party/sources/m03_moderntcn/LICENSE",
+    "source_sha256": "62c172f180a9c70514e597a2e3bd22f12d3eb6eb2af1cbd79c83d4292a749115",
+    "delivery_sha256": "62c172f180a9c70514e597a2e3bd22f12d3eb6eb2af1cbd79c83d4292a749115",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m03_moderntcn/ModernTCN-Long-term-forecasting/layers/RevIN.py",
+    "destination": "third_party/sources/m03_moderntcn/ModernTCN-Long-term-forecasting/layers/RevIN.py",
+    "source_sha256": "1e08d0b3679f4ef79ac7f98a7f719f8d7f8a04595022ed34f702c7d70c0c4d90",
+    "delivery_sha256": "1e08d0b3679f4ef79ac7f98a7f719f8d7f8a04595022ed34f702c7d70c0c4d90",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m03_moderntcn/ModernTCN-Long-term-forecasting/models/ModernTCN.py",
+    "destination": "third_party/sources/m03_moderntcn/ModernTCN-Long-term-forecasting/models/ModernTCN.py",
+    "source_sha256": "daf74722e40d928e5ed6bc871b528a5d5d2c9090f30cafb89110cc88dc60fa30",
+    "delivery_sha256": "daf74722e40d928e5ed6bc871b528a5d5d2c9090f30cafb89110cc88dc60fa30",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m03_moderntcn/ModernTCN-Long-term-forecasting/models/ModernTCN_Layer.py",
+    "destination": "third_party/sources/m03_moderntcn/ModernTCN-Long-term-forecasting/models/ModernTCN_Layer.py",
+    "source_sha256": "b2291534c6a11ebd80882bed89f7cf8c76c721b8e0495294659f2c5b0fe88cea",
+    "delivery_sha256": "b2291534c6a11ebd80882bed89f7cf8c76c721b8e0495294659f2c5b0fe88cea",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m04_softs/LICENSE",
+    "destination": "third_party/sources/m04_softs/LICENSE",
+    "source_sha256": "02ad41e7363e960b1fa91658d0c21bdebf9ccb9881323606412dd39e79a3a178",
+    "delivery_sha256": "02ad41e7363e960b1fa91658d0c21bdebf9ccb9881323606412dd39e79a3a178",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m04_softs/layers/Embed.py",
+    "destination": "third_party/sources/m04_softs/layers/Embed.py",
+    "source_sha256": "46b79fb6970000d721297f9a368a3269b66b1a6fbb723d649bd63a2859d0fe3b",
+    "delivery_sha256": "46b79fb6970000d721297f9a368a3269b66b1a6fbb723d649bd63a2859d0fe3b",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m04_softs/layers/Transformer_EncDec.py",
+    "destination": "third_party/sources/m04_softs/layers/Transformer_EncDec.py",
+    "source_sha256": "5b02b4aa9ae14d2e4ac3951a84f53011f5d15586f7a6e4a1e2a355e8e5309e7f",
+    "delivery_sha256": "5b02b4aa9ae14d2e4ac3951a84f53011f5d15586f7a6e4a1e2a355e8e5309e7f",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m04_softs/layers/__init__.py",
+    "destination": "third_party/sources/m04_softs/layers/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "delivery_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m04_softs/models/SOFTS.py",
+    "destination": "third_party/sources/m04_softs/models/SOFTS.py",
+    "source_sha256": "71cd0b1d72055ff71a313139bf1e9801351f7798c7b392f679a3befd7c2f16e1",
+    "delivery_sha256": "71cd0b1d72055ff71a313139bf1e9801351f7798c7b392f679a3befd7c2f16e1",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m06_timebridge/LICENSE",
+    "destination": "third_party/sources/m06_timebridge/LICENSE",
+    "source_sha256": "475078cc1f6de41e1b39c66b61aad6e870ddec14ce7132e18241ed74b9b3b6ff",
+    "delivery_sha256": "475078cc1f6de41e1b39c66b61aad6e870ddec14ce7132e18241ed74b9b3b6ff",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m06_timebridge/layers/Embed.py",
+    "destination": "third_party/sources/m06_timebridge/layers/Embed.py",
+    "source_sha256": "ca5b1221b4364577a75bb4794014dc6320849a70ad59fa8355c39fcc3eb6f7d2",
+    "delivery_sha256": "ca5b1221b4364577a75bb4794014dc6320849a70ad59fa8355c39fcc3eb6f7d2",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m06_timebridge/layers/SelfAttention_Family.py",
+    "destination": "third_party/sources/m06_timebridge/layers/SelfAttention_Family.py",
+    "source_sha256": "90b333e78699d9caeade7aae1f880f54607292a1e470ae9ad28adc4ed8776b26",
+    "delivery_sha256": "90b333e78699d9caeade7aae1f880f54607292a1e470ae9ad28adc4ed8776b26",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m06_timebridge/layers/Transformer_EncDec.py",
+    "destination": "third_party/sources/m06_timebridge/layers/Transformer_EncDec.py",
+    "source_sha256": "8c60fde6e9e5ff47f9524cb7d7ce2cbc80f6f4f706b9fc32bfd56d9120b49dc7",
+    "delivery_sha256": "8c60fde6e9e5ff47f9524cb7d7ce2cbc80f6f4f706b9fc32bfd56d9120b49dc7",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m06_timebridge/layers/__init__.py",
+    "destination": "third_party/sources/m06_timebridge/layers/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "delivery_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m06_timebridge/model/TimeBridge.py",
+    "destination": "third_party/sources/m06_timebridge/model/TimeBridge.py",
+    "source_sha256": "85b2ba4e7f3199c3dafc9128296c248b02ec53335ac1f5d155e8a445b910a4b5",
+    "delivery_sha256": "85b2ba4e7f3199c3dafc9128296c248b02ec53335ac1f5d155e8a445b910a4b5",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m06_timebridge/utils/__init__.py",
+    "destination": "third_party/sources/m06_timebridge/utils/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "delivery_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m06_timebridge/utils/masking.py",
+    "destination": "third_party/sources/m06_timebridge/utils/masking.py",
+    "source_sha256": "a63f8829eb75eb737cd91aa0303cd1692c651bf65a107bf5b51b369a0649d085",
+    "delivery_sha256": "a63f8829eb75eb737cd91aa0303cd1692c651bf65a107bf5b51b369a0649d085",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m09_srsnet/LICENSE",
+    "destination": "third_party/sources/m09_srsnet/LICENSE",
+    "source_sha256": "212e9147f810f6ca6d14f3f6b0182f141e69f1da7d2c429aaebf27e6c0ed25b6",
+    "delivery_sha256": "212e9147f810f6ca6d14f3f6b0182f141e69f1da7d2c429aaebf27e6c0ed25b6",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m09_srsnet/ts_benchmark/baselines/srsnet/layers/RevIN.py",
+    "destination": "third_party/sources/m09_srsnet/ts_benchmark/baselines/srsnet/layers/RevIN.py",
+    "source_sha256": "0faa1c0dc53b8dc470572babc3540d8c98622370de773c29437702702332ae96",
+    "delivery_sha256": "0faa1c0dc53b8dc470572babc3540d8c98622370de773c29437702702332ae96",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m09_srsnet/ts_benchmark/baselines/srsnet/layers/SRS.py",
+    "destination": "third_party/sources/m09_srsnet/ts_benchmark/baselines/srsnet/layers/SRS.py",
+    "source_sha256": "5a178b2f1964de5f74eef769926aabc0c3f3bbb02f7d09fb2a5021779fa85a80",
+    "delivery_sha256": "5a178b2f1964de5f74eef769926aabc0c3f3bbb02f7d09fb2a5021779fa85a80",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m09_srsnet/ts_benchmark/baselines/srsnet/layers/__init__.py",
+    "destination": "third_party/sources/m09_srsnet/ts_benchmark/baselines/srsnet/layers/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "delivery_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/third_party/sources/m09_srsnet/ts_benchmark/baselines/srsnet/models/srsnet_model.py",
+    "destination": "third_party/sources/m09_srsnet/ts_benchmark/baselines/srsnet/models/srsnet_model.py",
+    "source_sha256": "5736f4323b70e2ae4d79162fd2174a9d7b61aaa1a028502c777d6e4c25731275",
+    "delivery_sha256": "5736f4323b70e2ae4d79162fd2174a9d7b61aaa1a028502c777d6e4c25731275",
+    "adapted": false
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/v371/contracts.py",
+    "destination": "src/mef_delivery/contracts.py",
+    "source_sha256": "7357776df2f665d1ddf8d67460dad6f3e26647d047909d9b5a181f905b48cdb7",
+    "delivery_sha256": "4671c8e16ce7ae35f8455aed03bb41c50cc604f1acfd027cb3a1cd072e8c438a",
+    "adapted": true
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/v371/writer.py",
+    "destination": "src/mef_delivery/writer.py",
+    "source_sha256": "17ead5604977ec5b62a79673061fcf2c7b23bf37cc1746d4925f623e1216840e",
+    "delivery_sha256": "d618e08474f4121d5f96885d2b4fbbb4b3578e217eda8e50a057be883370cb29",
+    "adapted": true
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/v371/memory.py",
+    "destination": "src/mef_delivery/memory.py",
+    "source_sha256": "7334fddfbd8742ffc4ed0426e087e47a2998409183e82bcf324527b193515d98",
+    "delivery_sha256": "897a440f68854ff3f9e03081972f4462d034f2afa674fe7aaabf28c320923e8d",
+    "adapted": true
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/v371/cal1.py",
+    "destination": "src/mef_delivery/cal1.py",
+    "source_sha256": "274f3466667b4cb8a573a26c3f56f4f32ee9686ab057a049cf96800af2d45e67",
+    "delivery_sha256": "be9f97cd45cfc6a86cd76b5526b84c8e13f0a84e7fbdcfaf9159ab5e591261c6",
+    "adapted": true
+  },
+  {
+    "source": "试验区2/models/proposed/mef_rank/v3_7_1/frozen_source/mef_rank/v371/metrics.py",
+    "destination": "src/mef_delivery/metrics.py",
+    "source_sha256": "b445c7d9d167c39ac144861cecb38228c72b19bef95b0cfbcbdaefb86c306d7a",
+    "delivery_sha256": "f8363cb80d445401803e00adba03bad397901eeb106ba267d981ef83bfa7d987",
+    "adapted": true
+  }
+]

@@ -1,0 +1,105 @@
+schema_version: 1
+captured_at: 2026-09-13
+year_policy: formal_conference_publication_year
+
+sources:
+  m01_itransformer:
+    model_name: iTransformer
+    venue: ICLR
+    year: 2024
+    repository: https://github.com/thuml/iTransformer.git
+    commit: c2426e68ca13f74aaec08045c5c724d8ad328124
+    source_subdir: .
+    model_file: model/iTransformer.py
+    license_status: MIT
+    redistribution: permitted_with_notice
+
+  m02_timemixer:
+    model_name: TimeMixer
+    venue: ICLR
+    year: 2024
+    repository: https://github.com/kwuking/TimeMixer.git
+    commit: e24610583b36fdd8c76cc17a8df4e65759a5f460
+    source_subdir: .
+    model_file: models/TimeMixer.py
+    license_status: Apache-2.0
+    redistribution: permitted_with_notice
+    implementation_guard: models/TimeMixer.py only; TimeMixer++ is excluded
+
+  m03_moderntcn:
+    model_name: ModernTCN
+    venue: ICLR
+    year: 2024
+    repository: https://github.com/luodhhh/ModernTCN.git
+    commit: 56a9a2c018385cd5acef015378cae7f084d1b11c
+    source_subdir: ModernTCN-Long-term-forecasting
+    model_file: ModernTCN-Long-term-forecasting/models/ModernTCN.py
+    license_status: MIT
+    redistribution: permitted_with_notice
+
+  m04_softs:
+    model_name: SOFTS
+    venue: NeurIPS
+    year: 2024
+    repository: https://github.com/Secilia-Cxy/SOFTS.git
+    commit: f5d35fd7c3e716b6383ce6d3cc42c131e32c3c44
+    source_subdir: .
+    model_file: models/SOFTS.py
+    license_status: MIT
+    redistribution: permitted_with_notice
+
+  m05_timexer:
+    model_name: TimeXer
+    venue: NeurIPS
+    year: 2024
+    repository: https://github.com/thuml/TimeXer.git
+    commit: 76011909357972bd55a27adba2e1be994d81b327
+    source_subdir: .
+    model_file: models/TimeXer.py
+    license_status: no_root_license_file
+    redistribution: prohibited_until_clarified
+
+  m06_timebridge:
+    model_name: TimeBridge
+    venue: ICML
+    year: 2025
+    repository: https://github.com/Hank0626/TimeBridge.git
+    commit: 0f9a83fbc3e1260c9ddd527c522dff0ce4b9554b
+    source_subdir: .
+    model_file: model/TimeBridge.py
+    license_status: MIT
+    redistribution: permitted_with_notice
+
+  m07_timefilter:
+    model_name: TimeFilter
+    venue: ICML
+    year: 2025
+    repository: https://github.com/TROUBADOUR000/TimeFilter.git
+    commit: dffde87e4fff0fdeeebbacde03dc1e432e15b3a1
+    source_subdir: .
+    model_file: models/TimeFilter.py
+    license_status: no_root_license_file
+    redistribution: prohibited_until_clarified
+
+  m09_srsnet:
+    model_name: SRSNet
+    venue: NeurIPS
+    year: 2025
+    repository: https://github.com/decisionintelligence/SRSNet.git
+    commit: 6ee35d498f48eefecf84530b362b137de38e6592
+    source_subdir: .
+    model_file: ts_benchmark/baselines/srsnet/models/srsnet_model.py
+    license_status: MIT
+    redistribution: permitted_with_notice
+
+  m10_channeltokenformer:
+    model_name: ChannelTokenFormer
+    venue: ICLR
+    year: 2026
+    repository: https://github.com/jinkwan1115/ChannelTokenFormer.git
+    commit: b1c100effb9c27cd25de07e91de7f9005d18d5e7
+    source_subdir: .
+    model_file: models/ChannelTokenFormer.py
+    license_status: no_root_license_file
+    redistribution: prohibited_until_clarified
+    experiment_setting: regular_daily_with_real_feature_mask
