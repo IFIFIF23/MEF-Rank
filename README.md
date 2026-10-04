@@ -1,95 +1,150 @@
-# MEF-Rank
+<p align="center">
+  <img src="docs/assets/banner.svg" alt="MEF-Rank — Model-Aware Action Memory for Financial Ranking" width="100%">
+</p>
 
-**MEF-Rank: Model-Aware Action Memory for Financial Ranking**
+<h3 align="center">Model-Aware Action Memory for Financial Ranking</h3>
 
-[中文说明](README.zh-CN.md) · [Training guide](code/README.md) · [Data access](docs/DATA.md) · [Implementation notes](code/IMPLEMENTATION.md)
+<p align="center">
+  Historical experience · Model-aware retrieval · Selective feedback
+</p>
+
+<p align="center">
+  <a href="README.zh-CN.md">中文</a> &nbsp; / &nbsp;
+  <a href="#quick-start">Quick start</a> &nbsp; / &nbsp;
+  <a href="code/README.md">Training guide</a> &nbsp; / &nbsp;
+  <a href="docs/DATA.md">Data</a> &nbsp; / &nbsp;
+  <a href="CITATION.cff">Citation</a>
+</p>
+
+---
 
 ## Overview
 
-MEF-Rank uses historical prediction experience to adjust how a forecasting backbone uses its input signals. This repository provides a shared training pipeline and paired **Off / On** evaluation across ten backbones and five market datasets.
+**MEF-Rank** is a model-aware action memory framework for financial ranking. The relevance of historical experience depends on both the market environment and how the current predictor uses financial signals. MEF-Rank brings these two perspectives together, turning matured prediction outcomes into reusable adjustments to signal utilization.
 
-- **Off:** predict with the final trained backbone.
-- **On:** retrieve historical actions and perform a second forward pass through the **same backbone weights**; retain the Off prediction when support is insufficient.
+An offline **Writer** searches and screens historical actions, storing their utilization shifts alongside market and model states. At inference, joint retrieval identifies compatible experience, calibration controls the strength of feedback, and bounded inversion translates the selected shift into the current predictor's gate coordinates. The predictor then recomputes its representations with fixed weights, forming an explicit connection between historical feedback and the current ranking decision.
 
-Both settings use the same reordered **variant 1** training data. The pipeline connects final predictor training, quarterly historical predictors, Writer, Memory, CAL1 calibration, and paired evaluation.
+**Designed for portability across forecasting backbones and markets.** A shared seven-group signal interface separates the feedback mechanism from each backbone's internal representation. Backbone-specific adapters connect this interface to sequence, variable, or patch representations, allowing Writer, retrieval, calibration, and action inversion to follow a common workflow. The repository includes ten backbone adaptations and five market configurations. Extending to a new setting involves adapting the signal interface and data configuration, then building the corresponding history, memory, and calibration for that backbone, market, and seed.
+
+| Design advantage | What it enables |
+| :--- | :--- |
+| **Portability across architectures and markets** | Reuses the feedback workflow through a common action interface and backbone-specific adapters. Separate histories, memories, and calibration retain the context of each model and market. |
+| **Market–model joint retrieval** | Matches historical experience using both market conditions and the predictor's decision state, making relevance specific to the model receiving the feedback. |
+| **Action transport across compatible model states** | Stores the intended utilization change across seven financial signal groups and maps it through the current gates using bounded inversion. This accounts for gate saturation when realizing a retrieved action and makes the adjustment inspectable at the group level. |
+| **Screened historical experience** | Separates direction search, dose selection, and held-out screening within the Writer. Memory records retain support, quality, and uncertainty information for subsequent selection. |
+| **Feedback with frozen weights** | Applies an accepted action through one additional forward pass, without test-time parameter updates. Paired Off/On evaluation uses the same final predictor to isolate the effect of historical feedback. |
+| **Selective execution and explicit fallback** | Uses support, uncertainty, and feasibility checks to decide whether to apply an action. Unsupported queries retain the original Off prediction, with fallback reasons recorded for analysis. |
+
+## How it works
+
+<p align="center">
+  <img src="docs/assets/framework.svg" alt="MEF-Rank pipeline: offline historical predictors and Writer build action memory and CAL1; inference retrieves, calibrates, inverts, and recomputes with fixed weights." width="100%">
+</p>
+
+**Off** is the first prediction. **On** uses historical experience to adjust seven signal groups and performs a second forward pass with the same weights. Both settings use the same reordered **variant 1** training data. See the [implementation notes](code/IMPLEMENTATION.md) for the detailed pipeline and adaptations.
 
 ## Quick start
 
-**Requirements:** Linux, Python 3.10 or 3.11 with `venv`, Git, and network access for the first dependency installation. A compatible CUDA environment is recommended for training; CPU execution is also supported.
+**Environment:** Linux · Python 3.10 / 3.11 with `venv` · Git. First-time setup requires network access; training supports a compatible CUDA environment or CPU.
 
-Obtain an authorized encrypted dataset and its matching key from the data owner. Place the dataset under `data_encrypted/<dataset>/` and store the key outside this repository. See [data setup](docs/DATA.md).
+Obtain an authorized encrypted dataset and its matching key. Place the dataset in `data_encrypted/<dataset>/` and keep the key outside the repository. See [data setup](docs/DATA.md).
 
-From the repository root:
+From the repository root, launch the paired pipeline:
 
 ```bash
 bash code/run.sh --dataset gem --model STR --key-file /secure/keys/gem.key --device cuda
 ```
 
-Replace the example key path with your own. The command prepares `code/.venv`, installs the pinned upstream sources, and starts the full Off/On pipeline. Historical training and Writer add substantial work beyond training the final predictor alone.
+Replace the example key path with your own. The launcher prepares the local environment, installs locked upstream sources, and starts final predictor training, historical training, Writer, Memory, calibration, and paired evaluation. Use `--device cpu` for CPU execution.
 
-For an existing environment with the required dependencies installed:
+<details>
+<summary><b>Use an existing Python / CUDA environment</b></summary>
+
+Install the dependencies in `code/requirements.txt` into your environment, then run:
 
 ```bash
 MEF_PYTHON=/path/to/python bash code/run.sh --dataset nasdaq100 --model iTransformer --key-file /secure/keys/nasdaq100.key --device cuda
 ```
 
-For manual installation, CPU execution, individual model entry points, and resuming a run, see the [training and configuration guide](code/README.md).
+Manual installation, independent model entries, configuration options, and resume instructions are in the [training guide](code/README.md).
 
-## Models and datasets
+</details>
 
-| Setting | Supported values |
-| --- | --- |
-| Backbone | `STR`, `iTransformer`, `TimeMixer`, `ModernTCN`, `SOFTS`, `TimeXer`, `TimeBridge`, `TimeFilter`, `SRSNet`, `ChannelTokenFormer` |
-| Dataset | `gem`, `main`, `nasdaq100`, `sp500`, `crypto` |
-| Mode | `both` (default), `off`, `on` |
+## Backbones and markets
 
-Use `--mode both` for paired comparisons. Each backbone also has `off.py` and `on.py` entry points in `code/models/`; these share the implementation. Running the entries independently creates separate runs unless the same run is resumed.
+**Ten backbones:** STR · iTransformer · TimeMixer · ModernTCN · SOFTS · TimeXer · TimeBridge · TimeFilter · SRSNet · ChannelTokenFormer.
+
+| Dataset | Market | CLI argument |
+| :--- | :--- | :--- |
+| ChiNext | Chinese equities | `--dataset gem` |
+| Main board | Chinese equities | `--dataset main` |
+| NASDAQ-100 | U.S. equities | `--dataset nasdaq100` |
+| S&P 500 | U.S. equities | `--dataset sp500` |
+| Crypto-15 | Cryptocurrencies | `--dataset crypto` |
+
+Choose the backbone with `--model`, for example `--model TimeMixer`. Use **`--mode both`** (the default) for paired Off/On evaluation; `off` and `on` are also available. Each backbone has dedicated entries in `code/models/`. Independent invocations create separate runs unless the same run is resumed.
 
 ## Repository layout
 
+<details>
+<summary><b>Explore the code and documentation</b></summary>
+
 ```text
 .
-├── README.md                  Project overview and quick start
-├── README.zh-CN.md             Chinese overview
-├── CITATION.cff               Machine-readable citation
-├── CONTRIBUTING.md            Guidance for model and pipeline changes
-├── THIRD_PARTY_NOTICES.md      Upstream sources and licensing status
+├── README.md                  English project overview
+├── README.zh-CN.md             Chinese project overview
+├── CITATION.cff               Citation metadata
+├── CONTRIBUTING.md            Guidance for extending the code
+├── THIRD_PARTY_NOTICES.md      Upstream sources and notices
 ├── docs/
-│   └── DATA.md                Dataset access, layout, and semantics
+│   ├── assets/                Banner and framework diagram
+│   └── DATA.md                Dataset access and layout
 ├── code/
 │   ├── train.py               Unified training entry point
 │   ├── run.sh                 Environment setup and launch
 │   ├── requirements.txt       Python dependencies
 │   ├── config/                Training and backbone configurations
 │   ├── models/                Ten backbones × Off/On entry points
-│   ├── handoff/               Encrypted data loading and orchestration
-│   ├── src/                   Adapters, training, and evaluation modules
-│   ├── vendor/                Shared MEF mathematical components
+│   ├── handoff/               Data loading and orchestration
+│   ├── src/                   Adapters, training, and evaluation
+│   ├── vendor/                Shared MEF components
 │   ├── third_party/           Upstream revision and file-hash locks
 │   └── tests/                 Existing focused tests
-└── data_encrypted/            Local authorized data; excluded from Git
+└── data_encrypted/            Authorized local data; excluded from Git
 ```
 
-Upstream source trees are installed locally by `code/setup_sources.py` and excluded from Git. The local preparation copy already contains six permitted upstream subsets with their license files.
+Upstream sources are installed by `code/setup_sources.py` and excluded from Git. Local environments, encrypted data, keys, and run outputs are also excluded.
 
-## Outputs and implementation status
+</details>
 
-Runs are written to `code/outputs/<dataset>/<model>/seed_<seed>/<run>/`. They include the run manifest, model weights, historical records, Memory and calibration artifacts, paired predictions, and ranking metrics. See [output details](code/README.md#4-输出与改进位置).
+## Run artifacts
 
-The newly connected full enhancement pipeline has **not yet undergone end-to-end training validation**. This distribution contains no verified reproduction of the submitted paper's numerical results. Engineering adaptations and their validation status are documented in [IMPLEMENTATION.md](code/IMPLEMENTATION.md).
+Outputs are written to `code/outputs/<dataset>/<model>/seed_<seed>/<run>/`.
 
-The reordered training data contain some observations sourced from later periods. Results under this setup are diagnostic and must not be presented as independent out-of-sample performance. Reported ranking metrics are not a transaction-cost-adjusted trading backtest.
+| Artifact | Contents |
+| :--- | :--- |
+| `run_manifest.json` | Configuration, code/data identity, and device |
+| `main/model.pt` | Shared final predictor weights and training scaler |
+| `history/` | Historical checkpoints, Writer records, and rejection reasons |
+| `memory.json` / `calibration.json` | Experience memory and calibration |
+| `predictions.parquet` | Predictions and labels; paired outputs in `both/on` mode |
+| `metrics.json` / `daily_metrics.csv` | Ranking metrics, paired differences, and fallback records |
 
-## Paper and citation
+See the [training guide](code/README.md#4-输出与改进位置) for output details and mode-specific behavior.
 
-This repository accompanies **MEF-Rank: Model-Aware Action Memory for Financial Ranking**, currently under review. A public manuscript link will be added when available.
+## Documentation
 
-Citation metadata are provided in [CITATION.cff](CITATION.cff). The manuscript is listed as submitted work; venue, DOI, and publication year will be added when available.
+| Start here | Purpose |
+| :--- | :--- |
+| [Training and configuration](code/README.md) | Installation, command options, and resuming a run |
+| [Data guide](docs/DATA.md) | Encrypted packages, views, and access |
+| [Implementation notes](code/IMPLEMENTATION.md) | Components, provenance, and engineering details |
+| [Contributing](CONTRIBUTING.md) | Where and how to extend the implementation |
+| [Third-party notices](THIRD_PARTY_NOTICES.md) | Upstream source attribution |
 
-## Contact
+---
 
-For code usage, implementation questions, and dataset access inquiries, contact [yifany@bupt.edu.cn](mailto:yifany@bupt.edu.cn).
-
-## License and acknowledgements
-
-The project license is pending author selection. Third-party components retain their respective licenses; this repository does not grant additional rights to them. See [third-party notices](THIRD_PARTY_NOTICES.md) for the locked sources and redistribution status.
+<p align="center">
+  <b>Code &amp; data inquiries</b><br>
+  <a href="mailto:yifany@bupt.edu.cn">yifany@bupt.edu.cn</a>
+</p>

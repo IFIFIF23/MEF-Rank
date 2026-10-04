@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+  <title id="title">MEF-Rank method overview</title>
+  <desc id="desc">Offline historical predictors and matured labels feed the Writer, then action memory and CAL1. At inference, a frozen predictor produces Off and model state. Joint market-model retrieval and calibration select a utilization target, bounded inversion produces an action, and the same predictor recomputes On. Unsupported queries retain Off.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#72879e"/></marker>
+    <marker id="tealArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#248a79"/></marker>
+  </defs>
+  <rect x="1" y="1" width="1198" height="598" rx="20" fill="#f8fafc" stroke="#dbe4ed"/>
+  <g font-family="DejaVu Sans, Arial, sans-serif">
+    <text x="40" y="45" font-size="21" font-weight="700" fill="#152b45">From historical feedback to a corrected prediction</text>
+    <text x="40" y="74" font-size="14" fill="#5e7288">Separate experience construction and inference. Keep the final predictor weights fixed.</text>
+    <text x="40" y="119" font-size="12" font-weight="700" letter-spacing="2" fill="#647a91">01 / OFFLINE EXPERIENCE</text>
+    <g fill="#fff" stroke="#d2deea">
+      <rect x="40" y="137" width="326" height="112" rx="12"/>
+      <rect x="437" y="137" width="326" height="112" rx="12"/>
+      <rect x="834" y="137" width="326" height="112" rx="12" fill="#edf8f5" stroke="#b4ddd3"/>
+    </g>
+    <g fill="#152b45" font-size="18" font-weight="700">
+      <text x="62" y="169">Historical predictors</text>
+      <text x="459" y="169">Writer</text>
+      <text x="856" y="169">Action memory + CAL1</text>
+    </g>
+    <g fill="#5e7288" font-size="14">
+      <text x="62" y="199">Rolling checkpoints and states</text><text x="62" y="222">Outcomes after label maturity</text>
+      <text x="459" y="199">Search, select, and screen actions</text><text x="459" y="222">Store supported utilization shifts</text>
+      <text x="856" y="199">Backbone-specific experience</text><text x="856" y="222">Historical uncertainty calibration</text>
+    </g>
+    <g fill="none" stroke="#72879e" stroke-width="2" marker-end="url(#arrow)"><path d="M367 193H425"/><path d="M764 193H822"/></g>
+    <path d="M997 249V285H450V349" fill="none" stroke="#248a79" stroke-width="2" stroke-dasharray="5 5" marker-end="url(#tealArrow)"/>
+    <rect x="600" y="272" width="158" height="24" rx="12" fill="#edf8f5"/>
+    <text x="679" y="289" text-anchor="middle" fill="#287c6e" font-size="12">fixed before evaluation</text>
+    <text x="40" y="329" font-size="12" font-weight="700" letter-spacing="2" fill="#647a91">02 / CURRENT QUERY</text>
+    <g fill="#fff" stroke="#d2deea">
+      <rect x="40" y="359" width="250" height="132" rx="12"/>
+      <rect x="330" y="359" width="250" height="132" rx="12"/>
+      <rect x="620" y="359" width="250" height="132" rx="12"/>
+      <rect x="910" y="359" width="250" height="132" rx="12" fill="#edf8f5" stroke="#b4ddd3"/>
+    </g>
+    <g fill="#152b45" font-size="17" font-weight="700">
+      <text x="60" y="392">First prediction</text><text x="350" y="392">Retrieve + apply CAL1</text><text x="640" y="392">Bounded inversion</text><text x="930" y="392">Second prediction</text>
+    </g>
+    <g fill="#5e7288" font-size="13">
+      <text x="60" y="422">Input → frozen predictor</text><text x="60" y="446">Off scores + model state B</text><text x="60" y="470">Market descriptor J</text>
+      <text x="350" y="422">Joint market–model retrieval</text><text x="350" y="446">Support and uncertainty checks</text><text x="350" y="470">Target utilization change</text>
+      <text x="640" y="422">Map target to current gates</text><text x="640" y="446">Seven-group action</text><text x="640" y="470">Feasibility checks</text>
+      <text x="930" y="422">Same predictor weights</text><text x="930" y="446">Recompute with the action</text><text x="930" y="470">On scores</text>
+    </g>
+    <g fill="none" stroke="#72879e" stroke-width="2" marker-end="url(#arrow)"><path d="M290 425H321"/><path d="M580 425H611"/><path d="M870 425H901"/></g>
+    <rect x="40" y="519" width="1120" height="47" rx="10" fill="#f6efdf"/>
+    <circle cx="63" cy="542" r="5" fill="#b08637"/>
+    <text x="79" y="547" font-size="14" fill="#6f5829">Fallback: insufficient support or failed feasibility checks → retain the original Off prediction.</text>
+  </g>
+</svg>

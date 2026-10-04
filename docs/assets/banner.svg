@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">MEF-Rank — Model-Aware Action Memory for Financial Ranking</title>
+  <desc id="desc">A navy project banner with an abstract memory and feedback motif. Ten backbones, five markets, and paired Off/On evaluation.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101e37"/><stop offset="1" stop-color="#081326"/></linearGradient>
+    <linearGradient id="accent"><stop stop-color="#6ee7cf"/><stop offset="1" stop-color="#8baaff"/></linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#a0b8dc" stroke-opacity=".055"/></pattern>
+  </defs>
+  <rect width="1200" height="360" rx="22" fill="url(#bg)"/>
+  <rect width="1200" height="360" rx="22" fill="url(#grid)"/>
+  <path d="M0 338H1200" stroke="url(#accent)" stroke-width="2" opacity=".7"/>
+  <g font-family="DejaVu Sans, Arial, sans-serif">
+    <rect x="52" y="45" width="6" height="17" rx="3" fill="#6ee7cf"/>
+    <text x="72" y="59" font-size="13" letter-spacing="3" fill="#a8bbd8">FINANCIAL RANKING · RESEARCH CODE</text>
+    <text x="49" y="154" font-size="72" font-weight="700" letter-spacing="-3" fill="#f4f8ff">MEF-Rank<tspan fill="#6ee7cf">.</tspan></text>
+    <text x="53" y="199" font-size="23" fill="#cfdaec">Model-Aware Action Memory</text>
+    <text x="53" y="232" font-size="23" fill="#cfdaec">for Financial Ranking</text>
+    <g font-size="13" fill="#dae5f6">
+      <rect x="53" y="270" width="137" height="34" rx="17" fill="#1a2c45" stroke="#304863"/>
+      <text x="121.5" y="292" text-anchor="middle">10 BACKBONES</text>
+      <rect x="202" y="270" width="120" height="34" rx="17" fill="#1a2c45" stroke="#304863"/>
+      <text x="262" y="292" text-anchor="middle">5 MARKETS</text>
+      <rect x="334" y="270" width="155" height="34" rx="17" fill="#143936" stroke="#2b6660"/>
+      <text x="411.5" y="292" text-anchor="middle" fill="#a5f3df">PAIRED OFF / ON</text>
+    </g>
+    <g fill="none" stroke="#3b526e" stroke-width="1.5">
+      <circle cx="958" cy="164" r="122" stroke-dasharray="3 8"/>
+      <circle cx="958" cy="164" r="88"/>
+      <path d="M783 106H835L901 152M782 224H833L901 177M1017 164H1096"/>
+    </g>
+    <g fill="#142740" stroke="#4e6886">
+      <rect x="721" y="77" width="80" height="56" rx="10"/>
+      <rect x="711" y="68" width="80" height="56" rx="10"/>
+      <rect x="701" y="59" width="80" height="56" rx="10"/>
+      <rect x="701" y="197" width="80" height="56" rx="10"/>
+    </g>
+    <g stroke="#88a7c6" stroke-width="3" stroke-linecap="round">
+      <path d="M718 77H761M718 88H750M718 99H741"/>
+      <path d="M718 214H761M718 225H750M718 236H741"/>
+    </g>
+    <rect x="899" y="110" width="118" height="108" rx="24" fill="#143b3c" stroke="#6ee7cf" stroke-width="2"/>
+    <g fill="#6ee7cf"><circle cx="928" cy="143" r="5"/><circle cx="958" cy="139" r="5"/><circle cx="988" cy="143" r="5"/><circle cx="928" cy="180" r="5"/><circle cx="958" cy="187" r="5"/><circle cx="988" cy="180" r="5"/></g>
+    <g stroke="#6ee7cf" stroke-width="1.5" opacity=".65"><path d="M928 143L958 187L988 143M928 180L958 139L988 180M928 143L988 180M988 143L928 180"/></g>
+    <circle cx="1097" cy="164" r="9" fill="#edc27f"/>
+    <path d="M1038 76C1090 105 1110 234 1022 267H910" fill="none" stroke="#edc27f" stroke-width="2.5"/>
+    <path d="M919 260L909 267L919 274" fill="none" stroke="#edc27f" stroke-width="2.5"/>
+    <text x="958" y="310" text-anchor="middle" font-size="12" letter-spacing="2.5" fill="#91abc7">RETRIEVE · ADAPT · RECOMPUTE</text>
+  </g>
+</svg>
